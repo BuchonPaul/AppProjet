@@ -10,5 +10,27 @@
             <py-script>for i in range(3):print("hello les petits fous")</py-script>
         </body>
     </html>
+<script>
+    const apiKey = "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"; // Replace with your actual API key
+    const prompt = "Test";
 
+    async function generateText() {
+        const response = await fetch("https://api.openai.com/v1/engines/davinci-codex/completions", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({
+            prompt: prompt,
+            max_tokens: 10
+            })
+        });
 
+        const json = await response.json();
+        console.log(json.choices[0].text);
+    }
+
+    generateText();
+
+</script>
