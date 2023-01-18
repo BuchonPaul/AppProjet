@@ -2,12 +2,25 @@
 <html>
     <head>
         <title>Test Page</title>
-        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>  -->
     </head>
         <body>
             <h1>Hello World!</h1>
-            <!-- <py-script>for i in range(3):print("hello les petits fous")</py-script> -->
+            <form action="submit-product.php" method="post">
+                <label for="product-name">Nom du produit:</label>
+                <input type="text" id="product-name" name="product-name">
+                <br>
+                <label for="quantity">Quantité:</label>
+                <input type="number" id="quantity" name="quantity">
+                <br>
+                <label for="unite">Unité:</label>
+                <select id="unite" name="unite">
+                  <option value="unité">Unité</option>
+                  <option value="g">g</option>
+                  <option value="L">L</option>
+                </select>
+                <br>
+                <input type="submit" value="Soumettre">
+              </form>
         </body>
     </html>
 <script>
@@ -22,7 +35,7 @@
             "Authorization": `Bearer ${apiKey}`
             },
             body: JSON.stringify({
-                "model": "text-davinci-003",
+                "model": "text-davinci-003",    
                 "prompt": prompt,
                 "temperature": 0.1,
                 "max_tokens": 45
