@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Test Page</title>
-</head>
-<body>
-  <h1>SALUT LES BGS</h1>
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-control" content="public" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet crustace</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icon/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/info.css" />
+  </head>
+
+  <body>
+    <div id="mainWrapper">
+      <header>
+        <h1>PAP</h1>
+        <h2>Guide des espèces</h2>
+      </header>
+      <svg class="spinner" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+      <div class="content">
+        <div class="allSpecies">
+          <img src="./assets/icon/menu.svg" alt="All the species" id="menu" />
+          <pre>
+Parcourir
+les espèces</pre
+          >
+        </div>
+        <div id="card">
+          <img id="info" src="./assets/icon/info.svg" alt="Info" />
+          <div>
+            <img id="crustace" src="./assets/img/coque.png" alt="Coque" />
+            <h2>Coque</h2>
+          </div>
+          <span id="divide"></span>
+        </div>
+        <div id="info-content" class="hide">
+          <div id="infoHead">
+            <h2 id="name"></h2>
+            <img id="close" src="./assets/icon/cross.svg" alt="Close" />
+          </div>
+          <div class="infosPeche">
+            <p>Taille minimal de capture:</p>
+            <div id="capture" class="info-val"></div>
+          </div>
+          <div class="infosPeche">
+            <p>Quantité maximale:</p>
+            <div id="quantite" class="info-val"></div>
+          </div>
+          <div class="infosPeche">
+            <p>Période de pêche:</p>
+            <div id="periode" class="info-val"></div>
+          </div>
+          <div class="infosPeche" id="warn">
+            <img src="./assets/icon/warning.svg" alt="" />
+            <p>Espèce à marquer</p>
+          </div>
+        </div>
+        <footer>
+          <h2>Ce n'est pas celui ci ?</h2>
+          <button id="next">Suivant</button>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/functions.js"></script>
+    <script src="./js/firebase.js" type="module"></script>
+    <script type="module">
+      import { getData } from "./js/firebase.js";
+      window.getData = getData;
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
