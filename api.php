@@ -1,9 +1,9 @@
 <?php
 // Connexion à la base de données
-$host = "localhost";
-$user = "admin";
+$host = "127.0.0.1:3306";
+$user = "u693686849_admin";
 $password = "Base2donnée";
-$dbname = "cook_project";
+$dbname = "u693686849_cook_project";
 $conn = new mysqli($host, $user, $password, $dbname);
 
 // Vérifier la connexion
