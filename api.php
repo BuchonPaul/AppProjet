@@ -1,6 +1,6 @@
 <?php
 // Connexion à la base de données
-$host = "127.0.0.1:3306";
+$host = "localhost";
 $user = "admin";
 $password = "Base2donnée";
 $dbname = "cook_project";
