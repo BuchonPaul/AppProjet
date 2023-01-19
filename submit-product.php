@@ -24,6 +24,7 @@ $stmt->bind_param("sds", $product_name, $quantity, $unite);
 // Exécuter la requête
 if ($stmt->execute()) {
     echo "Product added successfully.";
+    header("Location: index.html");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
