@@ -1,4 +1,14 @@
 <?php
+$host = "127.0.0.1:3306";
+$user = "u693686849_admin";
+$password = "Base2donnée";
+$dbname = "u693686849_cook_project";
+$conn = new mysqli($host, $user, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 function get_all_product(){
     global $conn;
     $sql = "SELECT * FROM product";
@@ -13,6 +23,7 @@ function get_all_product(){
         return "0 results";
     }
 }
+get_all_product();
 
 function add_product($pn,$q,$u){
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
