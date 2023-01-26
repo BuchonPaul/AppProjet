@@ -1,14 +1,14 @@
 <?php
-$host = "127.0.0.1:3306";
-$user = "u693686849_admin";
-$password = "Base2donnée";
-$dbname = "u693686849_cook_project";
-$CONN = new mysqli($host, $user, $password, $dbname);
+// $host = "127.0.0.1:3306";
+// $user = "u693686849_admin";
+// $password = "Base2donnée";
+// $dbname = "u693686849_cook_project";
+// $CONN = new mysqli($host, $user, $password, $dbname);
 
 function get_all_product(){
-    global $CONN;
+    global $conn;
     $sql = "SELECT * FROM product";
-    $result = $CONN ->query($sql);
+    $result = $conn ->query($sql);
     if ($result->num_rows > 0) {
         $data = array();
         while($row = $result->fetch_assoc()) {
