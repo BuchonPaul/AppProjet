@@ -1,12 +1,4 @@
 <?php
-require_once("api_connect.php");
-
-// $host = "127.0.0.1:3306";
-// $user = "u693686849_admin";
-// $password = "Base2donnée";
-// $dbname = "u693686849_cook_project";
-// $CONN = new mysqli($host, $user, $password, $dbname);
-
 function get_all_product(){
     global $conn;
     $sql = "SELECT * FROM product";
