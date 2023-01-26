@@ -13,9 +13,9 @@ $CONN = new mysqli($host, $user, $password, $dbname);
         while($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
-        return json_encode($data);
+        var_dump(json_encode($data));
     } else {
-        return "0 results";
+        echo "0 results";
     }
 // }
 
