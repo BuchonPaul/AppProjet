@@ -25,7 +25,6 @@ function get_all_product(){
         return "0 results";
     }
 }
-var_dump(get_all_product());
 
 function add_product($pn,$q,$u){
     global $conn;
