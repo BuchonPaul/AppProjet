@@ -14,9 +14,9 @@ function get_all_product(){
         while($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
-        var_dump(json_encode($data));
+        return json_encode($data);
     } else {
-        echo "0 results";
+        return "0 results";
     }
 }
 var_dump(get_all_product());
