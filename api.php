@@ -23,7 +23,7 @@ function get_all_product(){
         return "0 results";
     }
 }
-get_all_product();
+var_dump(get_all_product());
 
 function add_product($pn,$q,$u){
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
