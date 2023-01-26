@@ -18,6 +18,7 @@ function get_all_product(){
         while($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
+        echo "youre in";
         return json_encode($data);
     } else {
         return "0 results";
