@@ -19,6 +19,7 @@ function get_all_product(){
         echo "0 results";
     }
 }
+var_dump(get_all_product());
 
 function add_product($pn,$q,$u){
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
