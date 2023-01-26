@@ -26,7 +26,7 @@ function get_all_product(){
     }
 }
 function test($test){
-    return $test
+    return $test;
 }
 function add_product($pn,$q,$u){
     global $conn;
