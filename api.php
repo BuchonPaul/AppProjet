@@ -5,9 +5,10 @@ $password = "Base2donnée";
 $dbname = "u693686849_cook_project";
 $CONN = new mysqli($host, $user, $password, $dbname);
 
-// function get_all_product(){
+function get_all_product(){
+    global $CONN;
     $sql = "SELECT * FROM product";
-    $result = $CONN->query($sql);
+    $result = $CONN ->query($sql);
     if ($result->num_rows > 0) {
         $data = array();
         while($row = $result->fetch_assoc()) {
@@ -17,7 +18,7 @@ $CONN = new mysqli($host, $user, $password, $dbname);
     } else {
         echo "0 results";
     }
-// }
+}
 
 function add_product($pn,$q,$u){
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
