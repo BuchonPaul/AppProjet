@@ -27,19 +27,21 @@ function get_all_product(){
 
 
 function add_product($pn,$q,$u){
+    global $conn;
+
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
-    $stmt = $GLOBALS['CONN']->prepare($sql);
+    $stmt = $conn->prepare($sql);
     $stmt->bind_param("sds", $pn, $q, $u);
     if ($stmt->execute()) {
         header("Location: index.html");
     } else {
-        print_error($sql . "<br>" . $GLOBALS['CONN']->error);
+        print_error($sql . "<br>" . $conn->error);
     }
 }
 
 function print_error($e){
     header("Location: error.php?error="+$e);
 }
-$CONN->close();
+$conn->close();
 
 ?>
