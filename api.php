@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 function get_all_product(){
     echo "youre in";
     global $conn;
-    $sql = "SELECT 1 FROM dual";
+    $sql = "SELECT * FROM product";
     $result = $conn ->query($sql);
     if ($result->num_rows > 0) {
         $data = array();
