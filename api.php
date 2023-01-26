@@ -10,6 +10,7 @@ if ($conn->connect_error) {
 }
 
 function get_all_product(){
+    echo "youre in";
     global $conn;
     $sql = "SELECT * FROM product";
     $result = $conn ->query($sql);
@@ -19,8 +20,11 @@ function get_all_product(){
             $data[] = $row;
         }
         echo "youre in";
+        $conn->close();
         return json_encode($data);
+
     } else {
+        $conn->close();
         return "0 results";
     }
 }
@@ -33,8 +37,10 @@ function add_product($pn,$q,$u){
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sds", $pn, $q, $u);
     if ($stmt->execute()) {
+        $conn->close();
         header("Location: index.html");
     } else {
+        $conn->close();
         print_error($sql . "<br>" . $conn->error);
     }
 }
@@ -42,6 +48,5 @@ function add_product($pn,$q,$u){
 function print_error($e){
     header("Location: error.php?error="+$e);
 }
-$conn->close();
 
 ?>
