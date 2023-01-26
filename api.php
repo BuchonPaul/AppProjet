@@ -1,4 +1,6 @@
 <?php
+require_once("api_connect.php");
+
 // $host = "127.0.0.1:3306";
 // $user = "u693686849_admin";
 // $password = "Base2donnée";
