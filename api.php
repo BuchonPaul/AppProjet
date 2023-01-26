@@ -25,7 +25,9 @@ function get_all_product(){
         return "0 results";
     }
 }
-
+function test($test){
+    return $test
+}
 function add_product($pn,$q,$u){
     global $conn;
 
