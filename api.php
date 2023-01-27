@@ -25,10 +25,6 @@ function get_all_product(){
     }
 }
 
-function test($test){
-    return $test;
-}
-
 function add_product($pn,$q,$u){
     global $conn;
     $sql = "INSERT INTO product (product_name, quantity, unite)
@@ -39,7 +35,7 @@ function add_product($pn,$q,$u){
         echo($conn->error);
     }
     else{
-        header("Location: index.html");
+        header("Location: index.php");
     }
 }
 

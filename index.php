@@ -1,3 +1,6 @@
+<?php 
+require_once("api.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,13 +18,23 @@
                 <br>
                 <label for="unite">Unité:</label>
                 <select id="unite" name="unite">
-                  <option value="unité">Unité</option>
-                  <option value="g">g</option>
-                  <option value="L">L</option>
+                    <option value="unité">Unité</option>
+                    <option value="g">g</option>
+                    <option value="L">L</option>
                 </select>
                 <br>
                 <input type="submit" value="Soumettre">
-              </form>
+            </form>
+        <table>
+            <caption>Inventaire</caption>
+            <tr> <th>Id</th> <th>Nom</th> <th>Quantity</th> <th>Unité</th></tr>
+            <?php 
+            foreach(json_decode(get_all_product()) as $key=>$value) {
+                echo("<tr> <td>Chaton</td> <td>2 mois</td> <td>40 €</td> </tr>");
+            }
+            ?>
+            <tr> <td>Chaton</td> <td>2 mois</td> <td>40 €</td> </tr>
+        </table>
         </body>
     </html>
 <script>
