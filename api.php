@@ -30,14 +30,17 @@ function test($test){
 }
 
 function add_product($pn,$q,$u){
-    var_dump('rest');
     global $conn;
     $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sds", $pn, $q, $u);
     if ($stmt->execute()) {
+        var_dump('d');
+
         echo "Product added successfully.";
     } else {
+        var_dump('rest');
+
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
