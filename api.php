@@ -31,15 +31,25 @@ function test($test){
 
 function add_product($pn,$q,$u){
     var_dump($pn);
+    var_dump($q);
+    var_dump($u);
     global $conn;
-    $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sds", $pn, $q, $u);
-    if ($stmt->execute()) {
-        echo "Product added successfully.";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+    $sql = "INSERT INTO product (name, quantity, unite)
+    VALUES
+    ('$pn', '$q', '$u');";
+    $result = $conn ->query($sql);
+    if (!$result) {
+        printf("Error message: %s\n", $conn->error);
     }
+    // global $conn;
+    // $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
+    // $stmt = $conn->prepare($sql);
+    // $stmt->bind_param("sds", $pn, $q, $u);
+    // if ($stmt->execute()) {
+    //     echo "Product added successfully.";
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $conn->error;
+    // }
 }
 
 function print_error($e){
