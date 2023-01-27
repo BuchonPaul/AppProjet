@@ -45,6 +45,6 @@ function add_product($pn,$q,$u){
 function print_error($e){
     header("Location: error.php?error="+$e);
 }
-//         $conn->close();
+//$conn->close();
 
 ?>
