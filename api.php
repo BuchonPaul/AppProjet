@@ -38,16 +38,9 @@ function add_product($pn,$q,$u){
     if (!$result) {
         echo($conn->error);
     }
-    // else
-    // global $conn;
-    // $sql = "INSERT INTO product (name, quantity, unite) VALUES (?, ?, ?)";
-    // $stmt = $conn->prepare($sql);
-    // $stmt->bind_param("sds", $pn, $q, $u);
-    // if ($stmt->execute()) {
-    //     echo "Product added successfully.";
-    // } else {
-    //     echo "Error: " . $sql . "<br>" . $conn->error;
-    // }
+    else{
+        header("Location: index.php");
+    }
 }
 
 function print_error($e){
