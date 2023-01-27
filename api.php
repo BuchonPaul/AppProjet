@@ -20,17 +20,17 @@ function get_all_product(){
             $data[] = $row;
         }
         echo "youre in";
+        $conn->close();
         return json_encode($data);
     } else {
         return "0 results";
     }
 }
-var_dump(get_all_product());
-var_dump("test");
 
 function test($test){
     return $test;
 }
+
 function add_product($pn,$q,$u){
     global $conn;
 
@@ -47,6 +47,5 @@ function add_product($pn,$q,$u){
 function print_error($e){
     header("Location: error.php?error="+$e);
 }
-$conn->close();
-var_dump(get_all_product());
+// var_dump(get_all_product());
 ?>
