@@ -39,7 +39,7 @@ function add_product($pn,$q,$u){
         echo($conn->error);
     }
     else{
-        header("Location: index.php");
+        header("Location: index.html");
     }
 }
 
