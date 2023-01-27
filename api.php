@@ -31,7 +31,7 @@ function test($test){
 
 function add_product($pn,$q,$u){
     global $conn;
-    $sql = "INSERT INTO product (product_nam, quantity, unite)
+    $sql = "INSERT INTO product (product_name, quantity, unite)
     VALUES
     ('$pn', '$q', '$u');";
     $result = $conn ->query($sql);
