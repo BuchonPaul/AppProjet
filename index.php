@@ -30,7 +30,7 @@ require_once("api.php");
             <tr> <th>Id</th> <th>Nom</th> <th>Quantity</th> <th>Unité</th></tr>
             <?php 
             foreach(json_decode(get_all_product()) as $key=>$value) {
-                echo("<tr> <td>Chaton</td> <td>2 mois</td> <td>40 €</td> </tr>");
+                echo("<tr> <td>".$value['id']."</td> <td>".$value['product_name']."</td> <td>".$value['quantity']."</td> <td>".$value['unite']."</td> </tr>");
             }
             ?>
             <tr> <td>Chaton</td> <td>2 mois</td> <td>40 €</td> </tr>
