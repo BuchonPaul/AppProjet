@@ -25,6 +25,9 @@ function get_all_product(){
         return "0 results";
     }
 }
+var_dump(get_all_product());
+var_dump("test");
+
 function test($test){
     return $test;
 }
@@ -45,5 +48,5 @@ function print_error($e){
     header("Location: error.php?error="+$e);
 }
 $conn->close();
-
+var_dump(get_all_product());
 ?>
