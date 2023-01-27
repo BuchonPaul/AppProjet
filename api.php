@@ -36,7 +36,7 @@ function add_product($pn,$q,$u){
     ('$pn', '$q', '$u');";
     $result = $conn ->query($sql);
     if (!$result) {
-        print_error($conn->error);
+        echo($conn->error);
     }
     // else
     // global $conn;
