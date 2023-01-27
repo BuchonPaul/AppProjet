@@ -20,7 +20,7 @@ function get_all_product(){
         }
         return json_encode($data);
     } else {
-
+        
         return "0 results";
     }
 }
@@ -45,5 +45,6 @@ function add_product($pn,$q,$u){
 function print_error($e){
     header("Location: error.php?error="+$e);
 }
-// var_dump(get_all_product());
+//         $conn->close();
+
 ?>
