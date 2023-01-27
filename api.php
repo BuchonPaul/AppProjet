@@ -10,7 +10,6 @@ if ($conn->connect_error) {
 }
 
 function get_all_product(){
-    echo "youre in";
     global $conn;
     $sql = "SELECT * FROM product";
     $result = $conn ->query($sql);
@@ -19,10 +18,10 @@ function get_all_product(){
         while($row = $result->fetch_assoc()) {
             $data[] = $row;
         }
-        echo "youre in";
         $conn->close();
         return json_encode($data);
     } else {
+        
         return "0 results";
     }
 }
