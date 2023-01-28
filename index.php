@@ -25,12 +25,7 @@ require_once("api.php");
                 <br>
                 <input type="submit" value="Soumettre">
             </form>
-        <?php 
-            $table = var_dump(json_decode(get_all_product()));
-            foreach(json_decode(get_all_product()) as $key=>$value) {
-                var_dump("<p>".$value."</p>");
-            }
-        ?>
+
         <table>
             <caption>Inventaire</caption>
             <tr> <th>Id</th> <th>Nom</th> <th>Quantity</th> <th>Unité</th></tr>
