@@ -27,7 +27,7 @@ require_once("api.php");
             </form>
         <?php 
             foreach(json_decode(get_all_product()) as $key=>$value) {
-                echo("<p>".$value['id']."</p>");
+                var_dump("<p>".$value['id']."</p>");
             }
         ?>
         <table>
