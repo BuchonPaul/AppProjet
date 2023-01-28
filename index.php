@@ -29,7 +29,7 @@ require_once("api.php");
         $table = json_decode(get_all_product());
         var_dump($table[1]);
             foreach($table as $key=>$value) {
-                var_dump($table[$key]["id"][1]);
+                var_dump($table[$key]["id"][1][0]);
             }
         ?>
         <table>
