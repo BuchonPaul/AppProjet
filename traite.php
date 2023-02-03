@@ -2,3 +2,6 @@
 <?php 
 echo($_POST["user_name"])
 ?>
+<script>
+    var a = 'salut'
+</script>
