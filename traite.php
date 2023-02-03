@@ -1,4 +1,3 @@
-<h1>PAge de traitemnet</h1>
-<?php 
-echo($_POST["name"])
-?>
+<h1><?php 
+var_dump($_POST)
+?>PAge de traitemnet</h1>
