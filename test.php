@@ -1,4 +1,4 @@
-<form action="/traite.php" method="post">
+<form action="traite.php" method="post">
     <div>
         <label for="name">Nom :</label>
         <input type="text" id="name" name="user_name">
