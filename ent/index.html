@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>ENT Rennes 1</title>
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="mleft">
+            <h1>Mon Environnement numérique de travail</h1>
+            <div class="menu">
+                <div id="un" class="mbutton">Tableau de Bord</div>
+                <div id="de" class="mbutton">Liens Utiles</div>
+                <div id="tr" class="mbutton">Emploi du Temps</div>
+                <div id="qu" class="mbutton"><a href="login.html">Identification</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card login">
+            <h1>ENT de l'université de Rennes</h1>
+            <p>Messagerie, emplois du temps, cours en ligne, notes et résultats ...<br><strong>Accédez à tous vos services numériques personnalisés</strong><br><br>L'Université de Rennes met à la disposition de ses étudiants et personnels, un Environnement Numérique de Travail. Celui-ci permet d'avoir accès en ligne, via un point d'entrée unique et sécurisé, à un bouquet de services numériques personnalisés.</p>
+            <div class="footlink">
+                <div class="button">Identification</div>
+                <p><a href="">Besoin d'aide</a>? Consulter le site de documentation des services numériques </a></p>
+            </div>
+        </div>
+        <div class="card sesame">
+            <h1>Sésame</h1>
+            <div class="list">
+                <h2>Étudiant</h2>
+                <p>Ouvrir, gérer mon compte étudiant</p>
+                <h2>Personnel</h2>
+                <p>Ouvrir, gérer mon compte</p>
+                <h2>Lecteur extérieur</h2>
+                <p>Ouvrir, gérer mon compte lecteur</p>
+                <h2>Compte spécial</h2>
+                <p>Ouvrir, gérer un compte spécial
+                    (compte non-nominatif)</p>
+            </div>
+            <a>Besoin d'aide ?</a>
+        </div>
+        <div class="card portal">
+            <h1>Portail du personnel et portail étudiant</h1>
+            <div class="button-container">
+                <div class="portalbutton">
+                    <img src="etu.png">
+                    <h3>Portail étudiant</h3>
+                </div>
+                <div class="portalbutton">
+                    <img src="prof.png">
+                    <h3>Portail du personel</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="case">
+            <h3>Bienvenue</h3>
+            <p>ENT de l'université de Rennes
+                Portail du personnel et portail étudiant
+                Gestion de votre compte Sésame</p>
+        </div>
+        <div class="case">
+            <h3>Emplois du temps</h3>
+            <p>Tous les emplois du temps 2022-2023</p>
+        </div>
+        <div class="case">
+            <h3>Actes administratifs</h3>
+            <p>Recueil des actes administratifs et réglementaires</p>
+        </div>
+        <div class="case">
+            <h3>Annuaires</h3>
+            <p>Annuaire externe université de Rennes</p>
+        </div>
+        <div class="case">
+            <h3>Assistance</h3>
+            <p>Assistance aux utilisateurs sans sésame.</p>
+        </div>
+        <div class="case">
+            <h3>SOS</h3>
+            <p>Urgence - santé - sécurité</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector(".button").addEventListener('mouseenter',function(){
+        document.querySelector(".button").style.textDecoration = "underline";
+    })
+    document.querySelector(".button").addEventListener('click',function(){
+        window.location.href = 'login.html'
+    })
+    document.querySelector(".button").addEventListener('mouseleave',function(){
+        document.querySelector(".button").style.textDecoration = "none";
+    })
+    document.querySelectorAll("h3").forEach(element => {
+        element.addEventListener('mouseenter',function(){
+        element.style.textDecoration = "underline";
+    }); 
+    })
+    document.querySelectorAll("h3").forEach(element => {
+        element.addEventListener('mouseleave',function(){
+        element.style.textDecoration = "none";
+    }); 
+    })
+    document.querySelectorAll(".list p").forEach(element => {
+        element.addEventListener('mouseenter',function(){
+        element.style.textDecoration = "underline";
+    }); 
+    })
+    document.querySelectorAll(".list p").forEach(element => {
+        element.addEventListener('mouseleave',function(){
+        element.style.textDecoration = "none";
+    }); 
+    })
+</script>

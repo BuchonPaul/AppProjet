@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>ENT Rennes 1</title>
+  <link rel="stylesheet" href="style/tdb.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="mleft">
+            <h1>Mon Environnement numérique de travail</h1>
+            <div class="menu">
+                <div id="un" class="mbutton">Tableau de Bord</div>
+                <div id="de" class="mbutton">Liens Utiles</div>
+                <div id="tr" class="mbutton">Emploi du Temps</div>
+                <div id="qu" class="mbutton"><a href="login.html">Identification</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <div class="account"><img src="icon.png">Mon Compte</div>
+        <div class="disconnect">Déconnexion</div>
+    </div>
+    <div class="card-container">
+        <div class="card edt">
+            <div class="ctitle">
+                <img class="icons" src="edt.svg">
+                <h1>Mon Emploi du temps</h1>
+            </div>
+            <div class="edtc">
+                <img src="edt.png">
+            </div>
+            <a href="index.html">Voir l'emploi du temps de la semaine</a>
+        </div>
+
+        <div class="card note">
+            <div class="ctitle">
+                <img class="icons" src="note.svg">
+                <h1>Mes dernières notes</h1>
+            </div>
+            <div class="edtc">
+                <img src="note.png">
+            </div>
+            <a href="index.html">Accéder à vos notes</a>
+        </div>
+
+        <div class="card mail">
+            <div class="notif">
+                <div class="ctitle">
+                    <img class="icons" src="mail.svg">
+                    <h1>Boîte Mail</h1>
+                </div>
+                <img src="notif.png">
+            </div>
+            <a href="index.html">Accéder à vos mails</a>
+        </div>
+
+        <div class="card moodle">
+            <div class="ctitle">
+                <img class="icons" src="mood.svg">
+                <h1>Moodle</h1>
+            </div>
+            <p>Plateforme de téléformation:</p>
+            <a href="index.html">Accéder à la Plateforme Moodle</a>
+        </div>
+        <div class="card etu">
+            <div class="ctitle">
+                <img class="icons" src="doss.svg">
+                <h1>Mon dossier étudiant</h1>
+            </div>
+            <div class="cont">
+                <div class="abs">
+                    <h2>Mes Absences</h2>
+                    <div class="col-cont">
+                        <div class="col">
+                            <p>Justifiées</p>
+                            <h1>2</h1>
+                        </div>
+                        <div class="col">
+                            <p>Non-Justifiées</p>
+                            <h1>4</h1>
+                            <div class="just"><span>☑</span>Justifer</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="index.html"><img class="icons" src="doss.svg">Accéder à votre dossier</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="case">
+            <h3>Bienvenue</h3>
+            <p>ENT de l'université de Rennes
+                Portail du personnel et portail étudiant
+                Gestion de votre compte Sésame</p>
+        </div>
+        <div class="case">
+            <h3>Emplois du temps</h3>
+            <p>Tous les emplois du temps 2022-2023</p>
+        </div>
+        <div class="case">
+            <h3>Actes administratifs</h3>
+            <p>Recueil des actes administratifs et réglementaires</p>
+        </div>
+        <div class="case">
+            <h3>Annuaires</h3>
+            <p>Annuaire externe université de Rennes</p>
+        </div>
+        <div class="case">
+            <h3>Assistance</h3>
+            <p>Assistance aux utilisateurs sans sésame.</p>
+        </div>
+        <div class="case">
+            <h3>SOS</h3>
+            <p>Urgence - santé - sécurité</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+        document.querySelector(".disconnect").addEventListener('click',function(){
+        window.location.href = 'index.html'
+    })
+</script>

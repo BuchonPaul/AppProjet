@@ -1,0 +1,195 @@
+$red: #C0392B;
+$orange: #FAA61A;
+$green: #5AB83F;
+$lblue: #00AEE6;
+$bblue: #474CCB;
+@media screen and (max-height: 900px) {
+    body {
+      height: 100%;
+    }
+  }
+  @media screen and (min-height: 900px) {
+    body {
+      height: 100vh;
+    }
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-size: 31px;
+    }     
+}
+.top{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    .logo{
+        height: 100%;
+        img{
+            width: 100%;
+            height:100%;
+        }
+    }
+    .mleft{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        h1{
+            margin: 0 20px 0 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-weight: 100;
+        }
+        .menu{
+            display: none;
+            .mbutton{
+                width: 200px;
+                padding:1%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &#un{
+                    background-color: $red;
+                }
+                &#de{
+                    background-color: $green;
+                }
+                &#tr{
+                    background-color: $lblue;
+                }
+                &#qu{
+                    background-color: $orange;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.card-container{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 20px 20px;
+    grid-auto-rows: auto;    
+    padding: 2%;
+    .h1{
+        font-weight: 200;
+    }
+    .card{
+        box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.22);
+        border-radius: 6px;
+        padding: 0 30px 25px 30px;
+
+        &.login{
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            h1{
+                color: $orange;
+            }
+            .footlink{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .button{
+                    width: 20%;
+                    padding: 1% 2% 1% 2%;
+                    background-color: $orange;
+                    font-size: 7%;
+                    font-size: 1.2em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    border-radius:50px;
+                }
+                p{
+                    margin: 0px;
+                    color: $orange;
+                    a{
+                        color: $orange; 
+                    }
+                }
+            }
+        }
+        &.sesame{
+            grid-column: 3 / 4;
+            grid-row: 1 / 4;
+            h1{
+                color: $bblue;
+            }
+            .list{
+                text-align: center;
+                margin-bottom: 5%;
+            }
+            p{
+                color: $bblue;
+            }
+            a{
+                color: $bblue;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &.portal{
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+            h1{
+                color: $red;
+            }
+            .button-container{
+                display: flex;
+                .portalbutton{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    img{
+                        width:20%;
+                        height: auto;
+                    }
+                }
+            }
+
+        }
+    }
+}
+.footer{
+    bottom:0;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    .case{
+        width: 12%;
+        h3{
+            margin: 5px 0 5px 0;
+        }
+        p{
+            margin: 5px 0 15px 0;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    }
+}

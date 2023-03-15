@@ -1,0 +1,133 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 100%;
+}
+.top .logo {
+  height: 100%;
+}
+.top .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo Narrow";
+}
+.container .login {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  box-shadow: 5px 4px 17px 5px rgba(0, 0, 0, 0.25);
+}
+.container .login .adv {
+  width: 60%;
+  height: 100%;
+  background: url("../jpo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.container .login .action {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .login .action h1 {
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 300%;
+}
+.container .login .action .content {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.container .login .action .content .champs {
+  display: flex;
+  flex-direction: column;
+}
+.container .login .action .content .champs input {
+  border: 0px;
+  border-bottom: #838383 solid 2px;
+  margin-bottom: 10%;
+  font-size: 20px;
+  width: 100%;
+}
+.container .login .action .content .champs .password {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10%;
+}
+.container .login .action .content .champs .password input {
+  margin-bottom: 0px;
+}
+.container .login .action .content .champs .password p {
+  margin: 0px;
+  padding: 0px 5px 0 5px;
+  color: white;
+  background-color: black;
+}
+.container .login .action .content .champs .password p:hover {
+  margin: 0px;
+  padding: 0px 5px 0 5px;
+  color: black;
+  background-color: white;
+}
+.container .login .action .content .champs .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.container .login .action .content .champs .buttons .button {
+  width: 40%;
+  padding: 1% 2% 1% 2%;
+  background-color: #FAA61A;
+  font-size: 7%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50px;
+}
+.container .login .action .content .champs .buttons a {
+  text-decoration: underline;
+  color: #838383;
+}
+.container .login .action .deco {
+  height: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.container .login .action .deco img {
+  margin-top: 10%;
+  width: 60%;
+  height: auto;
+}/*# sourceMappingURL=login.css.map */

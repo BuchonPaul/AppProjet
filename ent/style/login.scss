@@ -1,0 +1,144 @@
+$red: #C0392B;
+$orange: #FAA61A;
+$green: #5AB83F;
+$lblue: #00AEE6;
+$bblue: #474CCB;
+$grey: #838383;
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    //background: url('../bck.gif');
+    //background-size: cover;
+}
+.top{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 100%;
+    .logo{
+        height: 100%;
+        img{
+            width: 100%;
+            height:100%;
+        }
+    }
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo Narrow';
+    .login{
+        width: 70%;
+        height: 80%;
+        display: flex;
+        box-shadow: 5px 4px 17px 5px rgba(0, 0, 0, 0.25);
+        .adv{
+            width: 60%;
+            height: 100%;
+            background: url('../jpo.jpg');
+            background-size:     cover;
+            background-repeat:   no-repeat;
+            background-position: center center;        
+        }
+        .action{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // background: url('../bck.svg');
+            // background-size: 86%;
+            // background-repeat: no-repeat;
+            // background-position: 215% 163%;
+            h1{
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 300%;
+            }
+            .content{
+                width: 80%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .champs{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        border: 0px;
+                        border-bottom: $grey solid 2px;
+                        margin-bottom: 10%;
+                        font-size: 20px;
+                        width: 100%;
+                    }
+                    .password{
+                        width: 100%;
+                        display: flex ;
+                        margin-bottom: 10%;
+
+                        input{
+                            margin-bottom: 0px;
+                        }
+                        p{
+                            margin: 0px;
+                            padding: 0px 5px 0 5px;
+                            color: white;
+                            background-color: black;
+                        }
+                        p:hover{
+                            margin: 0px;
+                            padding: 0px 5px 0 5px;
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                    .buttons{
+                        display: flex;
+                        justify-content: space-between;
+                        .button{
+                            width: 40%;
+                            padding: 1% 2% 1% 2%;
+                            background-color: $orange;
+                            font-size: 7%;
+                            font-size: 1.2em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            border-radius:50px;
+                        }
+                        a{
+                            text-decoration: underline;
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+            .deco{
+                height: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-start ;
+                justify-content: flex-start;
+                flex-direction: row-reverse;
+                img{
+                    margin-top: 10%;
+                    width: 60%;
+                    height: auto;
+                }   
+            }
+        }
+    }
+}

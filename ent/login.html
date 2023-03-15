@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>ENT Rennes 1</title>
+  <link rel="stylesheet" href="style/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Archivo:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+    </div>
+    <div class="container">
+        <div class="login">
+            <div class="adv"></div>
+            <div class="action">
+                <div class="content">
+                    <h1 class="title">
+                        Connexion
+                    </h1>
+                    <div class="champs">
+                        <input type="text" placeholder="Identifiant">
+                        <div class="password">
+                            <input id="psswrd" type="password" placeholder="Mot de Passe">
+                            <p>👁</p>
+                        </div>
+                        <div class="buttons">
+                            <div id="conn" class="button">Connexion</div>
+                            <a>Mot de passe oublié</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="deco">
+                    <img src="bck.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let passwrd = document.querySelector("#psswrd")
+    document.querySelector(".password p").addEventListener('click', function(){
+        if(passwrd.type == 'password'){
+            passwrd.type = 'text'
+        }
+        else{
+            passwrd.type = 'password'
+
+        }
+    })
+    document.querySelector("#conn").addEventListener('click', function(){
+        window.location.href = 'tdb.html'
+    })
+</script>

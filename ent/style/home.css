@@ -1,0 +1,191 @@
+@media screen and (max-height: 900px) {
+  body {
+    height: 100%;
+  }
+}
+@media screen and (min-height: 900px) {
+  body {
+    height: 100vh;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body h1 {
+  font-size: 31px;
+}
+
+.top {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+}
+.top .logo {
+  height: 100%;
+}
+.top .logo img {
+  width: 100%;
+  height: 100%;
+}
+.top .mleft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.top .mleft h1 {
+  margin: 0 20px 0 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+.top .mleft .menu {
+  display: none;
+}
+.top .mleft .menu .mbutton {
+  width: 200px;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top .mleft .menu .mbutton#un {
+  background-color: #C0392B;
+}
+.top .mleft .menu .mbutton#de {
+  background-color: #5AB83F;
+}
+.top .mleft .menu .mbutton#tr {
+  background-color: #00AEE6;
+}
+.top .mleft .menu .mbutton#qu {
+  background-color: #FAA61A;
+}
+.top .mleft .menu .mbutton a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-container {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 20px 20px;
+  grid-auto-rows: auto;
+  padding: 2%;
+}
+.card-container .h1 {
+  font-weight: 200;
+}
+.card-container .card {
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+  padding: 0 30px 25px 30px;
+}
+.card-container .card.login {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.card-container .card.login h1 {
+  color: #FAA61A;
+}
+.card-container .card.login .footlink {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-container .card.login .footlink .button {
+  width: 20%;
+  padding: 1% 2% 1% 2%;
+  background-color: #FAA61A;
+  font-size: 7%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50px;
+}
+.card-container .card.login .footlink p {
+  margin: 0px;
+  color: #FAA61A;
+}
+.card-container .card.login .footlink p a {
+  color: #FAA61A;
+}
+.card-container .card.sesame {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+.card-container .card.sesame h1 {
+  color: #474CCB;
+}
+.card-container .card.sesame .list {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.card-container .card.sesame p {
+  color: #474CCB;
+}
+.card-container .card.sesame a {
+  color: #474CCB;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-container .card.portal {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.card-container .card.portal h1 {
+  color: #C0392B;
+}
+.card-container .card.portal .button-container {
+  display: flex;
+}
+.card-container .card.portal .button-container .portalbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-container .card.portal .button-container .portalbutton img {
+  width: 20%;
+  height: auto;
+}
+
+.footer {
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+}
+.footer .case {
+  width: 12%;
+}
+.footer .case h3 {
+  margin: 5px 0 5px 0;
+}
+.footer .case p {
+  margin: 5px 0 15px 0;
+  font-size: 16px;
+  font-weight: lighter;
+}/*# sourceMappingURL=home.css.map */
