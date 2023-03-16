@@ -1,0 +1,43 @@
+{
+  "name": "pla",
+  "version": "0.0.1",
+  "description": "Promise Library Adapter",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jasmine-node test",
+    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
+    "travis": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/vitaly-t/pla",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitaly-t/pla.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vitaly-t/pla/issues"
+  },
+  "keywords": [
+    "promise",
+    "adapter"
+  ],
+  "author": {
+    "name": "Vitaly Tomilov",
+    "email": "vitaly.tomilov@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10",
+    "npm": ">=1.4"
+  },
+  "dependencies": {
+    "cli-color": "1.x"
+  },
+  "devDependencies": {
+    "coveralls": "2.x",
+    "istanbul": "0.4",
+    "jasmine-node": "1.x"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "roulette",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assets": "^3.0.1",
+    "cannon-es": "^0.20.0",
+    "cannon-es-debugger": "^1.0.0",
+    "model": "^6.0.1",
+    "nodethree": "^1.0.0",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "pl": "^0.0.0",
+    "pla": "^0.0.1",
+    "plane.js": "^0.4.0",
+    "three": "^0.150.1",
+    "three-addons": "^1.2.0",
+    "three-gltf-loader": "^1.111.0",
+    "three-to-cannon": "^4.3.0",
+    "typescript": "^4.9.5"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "model",
+        "staticOutDir": "model"
+      }
+    ]
+  },
+  "description": ""
+}
